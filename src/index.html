@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Андрей Браун - веб разработчик</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
@@ -29,94 +31,93 @@
     </div>
     </div>
     <div class="about_me">
-        <div class="chapter"><h2>Обо мне</h2></div>
+        <div class="chapter_1"><h2>Обо мне</h2></div>
         <img src="img/fotka.jpg">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapidus leo nec omare diam. Sed commodo nibh ante
-        <br>facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec omare diam commodo nibh.</p>
+        facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec omare diam commodo nibh.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapidus leo nec omare diam. Sed commodo nibh ante
-        <br>facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec omare diam commodo nibh.</p>
-        <br>
+        facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec omare diam commodo nibh.</p>
         <input type="submit" value="Скачать резюме">
     </div>
     <div class="skills_background">
         <div class="skills">
-            <div class="chapter"><h2>Что я умею</h2></div>
-                <div class="item_skills">
+            <div class="chapter_2"><h2>Что я умею</h2></div>
+                <div class="item_skills indent">
                     <img src="img/laptop.png">
                     <h4>Веб-дизайн</h4>
-                    <p>Lorem ipsum dolor sit amet placerat
-                    <br>facilisis felis mi in tempus eleifend
-                    <br>pellentesque natoque etiam. </p>
+                    <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. </p>
                 </div>
                 <div class="item_skills">
                     <img src="img/sign.png">
                     <h4>Разработка</h4>
-                    <p>Lorem ipsum dolor sit amet placerat
-                    <br>facilisis mi in tempus eleifend 
-                    <br>pellentesque.</p>
+                    <p>Lorem ipsum dolor sit amet placerat facilisis mi in tempus eleifend pellentesque.</p>
                 </div>
                 <div class="item_skills">
                     <img src="img/rocket.png">
                     <h4>CEO-Оптимизация</h4>
-                    <p>Lorem ipsum dolor sit amet placerat
-                    <br>facilisis felis mi in tempus eleifend
-                    <br>pellentesque natoque etiam.</p>
+                    <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
                 </div>
                 <div class="item_skills">
                     <img src="img/Gram.png">
                     <h4>Маркетинг</h4>
-                    <p>Lorem ipsum dolor sit amet placerat
-                    <br>facilisis felis mi in tempus eleifend
-                    <br>pellentesque natoque .</p>
+                    <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque .</p>
                 </div>    
         </div>
     </div>
     <div class="case">
-        <div class="chapter"><h2>Кейсы</h2></div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</p>
+        <div class="chapter_3"><h2>Кейсы</h2></div>
+        <p class="text_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</p>
         <img src="img/fotka1.jpg">
           <div class="case1">
-              <h4>CLIENT:</h4>
-              Какая-то компания
-              <h4>WEBSITE:</h4>
-              https://www.somedomain.com
-              <h4>Название проекта</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna
-              <br>aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+             <div class="chapters">
+                  <h4 class="p">CLIENT:</h4>
+                  <p>Какая-то компания</p>
+                  <h4 class="p">WEBSITE:</h4>
+                 <p>https://www.somedomain.com</p>
+                  <input type="submit" value="VISIT LIVE SITE">
+              </div>
+              <div class="text_2">
+                  <h4>Название проекта</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
           </div>
-        <input type="submit" value="VISIT LIVE SITE">
     </div>
-    <div class="case_price">
-        <h2>Расчёт стоимости</h2>
-        <form>
-            <h3>ТИП САЙТА</h3>
-            <select>
-                <option selected disabled>Выберите пункт...</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-            </select>
-            <h3>ДИЗАЙН</h3>
-            <select>
-                <option selected disabled>Выберите пункт...</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-            </select>
-            <h3>АДАПТИВНОСТЬ</h3>
-            <select>
-                <option selected disabled>Выберите пункт...</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-            </select>
-        </form>
+    <div class="case_container">
+       <div class="case_price">
+            <h2>Расчёт стоимости</h2>
+            <form>
+                <h3>Тип сайта</h3>
+                <select>
+                    <option selected disabled>Выберите пункт...</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <h3>Дизайн</h3>
+                <select>
+                    <option selected disabled>Выберите пункт...</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <h3>Адаптивность</h3>
+                <select>
+                    <option selected disabled>Выберите пункт...</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                </form>
+            </div>
+            <div class="price_final">
+                <p class="p_final1">Сроки <span>0</span></p>
+                <p class="p_final2">Стоимость <span>0</span></p>
+            </div>
     </div>
     <div class="stat_background">
         <div class="stat">
-            <div class="chapter"><h2>Немного статистики</h2></div>
-               <div class="item_stat">
+            <div class="chapter_4"><h2>Немного статистики</h2></div>
+               <div class="item_stat indent1">
                    <img src="img/smile.png">
                    <h4>120</h4>
                    <p>Счастливых клиентов</p>
@@ -139,18 +140,17 @@
         </div>
     </div>
     <div class="feedback">
-        <div class="chapter"><h2>Отзывы</h2></div>
+        <div class="chapter_5"><h2>Отзывы</h2></div>
         <img src="img/FeedbackFace.png">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
-        <br>facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
-        Михаил, Ген. директор ПАО "Газпром".
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
+        <p><span>Михаил</span>, Ген. директор ПАО "Газпром".</p>
     </div>
     <footer>
         <div class="contacts_background">
             <div class="contacts">
-                <div class="chapter2"><h2>Мои контакты</h2></div>
+                <div class="chapter_6"><h2>Мои контакты</h2></div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcoccodo</p>
-               <div class="item_contacts">
+               <div class="item_contacts indent2">
                    <img src="img/Geo.png">
                    <h4>Санкт-Петербург
                    <br>Невский проспект 11</h4>
@@ -163,22 +163,21 @@
                    <img src="img/Phone.png">
                    <h4>+7 999 999-99-99</h4>
                </div> 
-            <h4>Оставьте мне сообщение</h4>
+            <h3>Оставьте мне сообщение</h3>
             <form>
-                <input type="text" placeholder="Имя"> <input type="text" placeholder="Email">
+                <input class="enter" type="text" placeholder="Имя"> <input class="enter" type="text" placeholder="Email">
                 <br>
                 <textarea placeholder="Сообщение"></textarea>
                 <br>
-                <input type="submit" value="Отправить">
+                <input class="button" type="submit" value="Отправить">
             </form>
-            <span><a href="http://facebook.com.vn/" target="_blank"><img src="img/fb.png"></a><a href="https://investor.twitterinc.com/" target="_blank"><img src="img/twit.png"></a><a href="https://dribbble.com/" target="_blank"><img src="img/ball.png"></a><a href="https://github.com/" target="_blank"></a><a href="https://www.instagram.com" target="_blank"><img src="img/inst.png"></a><a href="https://ru.linkedin.com/" target="_blank"><img src="img/in.png"></a></span>
-        </div>
+            </div>
          </div>
             <div class="map">
             
             </div>
             <div class="end">
-                Copyright © 2021 Андрей Браун. Design by Web
+                <p>Copyright © 2021 Андрей Браун. Design by Web</p>
             </div>
     </footer>
 </body>
