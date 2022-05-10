@@ -7,30 +7,57 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="preloader_container">
+        <div class="preloader"></div>
+        <div class="load">
+            <div class="loading bar1"><span>З</span></div>
+            <div class="loading bar2"><span>а</span></div>
+            <div class="loading bar3"><span>г</span></div>
+            <div class="loading bar4"><span>р</span></div>
+            <div class="loading bar5"><span>у</span></div>
+            <div class="loading bar6"><span>з</span></div>
+            <div class="loading bar7"><span>к</span></div>
+            <div class="loading bar8"><span>а</span></div>
+            <div class="loading bar9"><span>.</span></div>
+            <div class="loading bar10"><span>.</span></div>
+            <div class="loading bar11"><span>.</span></div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+        document.body.classList.add('loaded_hiding');
+        window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+        }, 500);
+  }
+    </script>
 <header>
     <nav>
-        <div class="logo">Андрей Браун</div>
+        <div class="logo"><a href="#main">Андрей Браун</a></div>
         <div class="menu">
             <ul>
-                <li>Обо мне</li>
-                <li>Услуги</li>
-                <li>Кейсы</li>
-                <li>Прайс</li>
-                <li>Отзывы</li>
-                <li>Контакты</li>
+                <li><a href="#about_me">Обо мне</a></li>
+                <li><a href="#skills">Услуги</a></li>
+                <li><a href="#case">Кейсы</a></li>
+                <li><a href="#price">Прайс</a></li>
+                <li><a href="#feedback">Отзывы</a></li>
+                <li><a href="#contacts">Контакты</a></li>
             </ul>
         </div>
     </nav>
 </header>
-    <div class="main">
-    <div class="title_container">
-        <h1>Привет<br>Я Андрей Браун</h1>
-        <h4>Фулл стек веб - разработчик и Android - разработчик</h4>
-        <input type="submit" value="Обо мне">
-        <input type="submit" value="Мои работы">
-    </div>
-    </div>
-    <div class="about_me">
+    <main>
+        <section class="main_page" id="main">
+            <div class="title_container">
+                <h1>Привет<br>Я Андрей Браун</h1>
+                <h4>Фулл стек веб - разработчик и Android - разработчик</h4>
+                <input type="button" value="Обо мне">
+                <input type="button" value="Мои работы">
+            </div>
+        </section>
+    </main>
+    <section class="about_me" id="about_me">
         <div class="chapter_1"><h2>Обо мне</h2></div>
         <img src="img/fotka.jpg">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapidus leo nec omare diam. Sed commodo nibh ante
@@ -38,33 +65,33 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapidus leo nec omare diam. Sed commodo nibh ante
         facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec omare diam commodo nibh.</p>
         <input type="submit" value="Скачать резюме">
-    </div>
-    <div class="skills_background">
+    </section>
+    <section class="skills_background" id="skills">
         <div class="skills">
             <div class="chapter_2"><h2>Что я умею</h2></div>
-                <div class="item_skills indent">
+                <div class="item_skills indent item_skill1">
                     <img src="img/laptop.png">
                     <h4>Веб-дизайн</h4>
                     <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. </p>
                 </div>
-                <div class="item_skills">
+                <div class="item_skills item_skill1">
                     <img src="img/sign.png">
                     <h4>Разработка</h4>
                     <p>Lorem ipsum dolor sit amet placerat facilisis mi in tempus eleifend pellentesque.</p>
                 </div>
-                <div class="item_skills">
+                <div class="item_skills item_skill2">
                     <img src="img/rocket.png">
                     <h4>CEO-Оптимизация</h4>
                     <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
                 </div>
-                <div class="item_skills">
+                <div class="item_skills item_skill2">
                     <img src="img/Gram.png">
                     <h4>Маркетинг</h4>
                     <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque .</p>
                 </div>    
         </div>
-    </div>
-    <div class="case">
+    </section>
+    <section class="case" id="case">
         <div class="chapter_3"><h2>Кейсы</h2></div>
         <p class="text_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</p>
         <img src="img/fotka1.jpg">
@@ -74,15 +101,15 @@
                   <p>Какая-то компания</p>
                   <h4 class="p">WEBSITE:</h4>
                  <p>https://www.somedomain.com</p>
-                  <input type="submit" value="VISIT LIVE SITE">
+                  <input type="button" value="VISIT LIVE SITE">
               </div>
               <div class="text_2">
                   <h4>Название проекта</h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
               </div>
           </div>
-    </div>
-    <div class="case_container">
+    </section>
+    <section class="case_container" id="price">
        <div class="case_price">
             <h2>Расчёт стоимости</h2>
             <form>
@@ -113,9 +140,9 @@
                 <p class="p_final1">Сроки <span>0</span></p>
                 <p class="p_final2">Стоимость <span>0</span></p>
             </div>
-    </div>
-    <div class="stat_background">
-        <div class="stat">
+    </section>
+    <section class="stat_background">
+        <div class="stat" id="stat">
             <div class="chapter_4"><h2>Немного статистики</h2></div>
                <div class="item_stat indent1">
                    <img src="img/smile.png">
@@ -138,16 +165,16 @@
                    <p>Наград получено</p>
                </div>
         </div>
-    </div>
-    <div class="feedback">
+    </section>
+    <section class="feedback" id="feedback">
         <div class="chapter_5"><h2>Отзывы</h2></div>
         <img src="img/FeedbackFace.png">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
         <p><span>Михаил</span>, Ген. директор ПАО "Газпром".</p>
-    </div>
+    </section>
     <footer>
         <div class="contacts_background">
-            <div class="contacts">
+            <div class="contacts" id="contacts">
                 <div class="chapter_6"><h2>Мои контакты</h2></div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcoccodo</p>
                <div class="item_contacts indent2">
@@ -165,7 +192,7 @@
                </div> 
             <h3>Оставьте мне сообщение</h3>
             <form>
-                <input class="enter" type="text" placeholder="Имя"> <input class="enter" type="text" placeholder="Email">
+                <input class="enter" type="text" placeholder="Имя"> <input class="enter1" type="text" placeholder="Email">
                 <br>
                 <textarea placeholder="Сообщение"></textarea>
                 <br>
