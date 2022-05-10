@@ -302,7 +302,11 @@ main{
     font-size: 11px;
     font-weight: bold;
     padding: 0px 11px 0px 32px;
+    transition: all 0.4s;
     transform: scale(1);
+}
+.about_me input:hover{
+    border-color: #d17700;
 }
 .about_me input:active{
     transform: scale(1.1);
@@ -477,7 +481,6 @@ main{
 }
 .case1{
     margin-left: 388px;
-    margin-bottom: 201px;
     height: 169px;
 }
 .case h4{
@@ -516,12 +519,15 @@ main{
     border-radius: 5px;
     background-color: #63b5ae;
     color: #fff;
+    transition: all 0.3s;
     transform: scale(1);
     z-index: 0;
 }
+.case1 input:hover{
+    background-color: #295753;
+}
 .case1 input:active{
     transform: scale(1.1);
-    color: #384354;
 }
 .case_container{
     margin-top: 153px;
@@ -535,6 +541,7 @@ main{
     text-align: center;
     font-weight: bold;
     margin-bottom: 54px;
+    margin-top: 201px;
 }
 .case_price h3{
     color: #1c2534;
@@ -756,12 +763,12 @@ main{
     border: 2px solid #fff;
     border-radius: 5px;
     color: #fff;
+    transition: all 0.4s;
     transform: scale(1);
 }
 .button:hover{
-    background-color: #fff;
-    color: #344051;
-    border: 4px solid #d17700;
+    color: #d17700;
+    border: 2px solid #d17700;
 }
 .button:active{
     transform: scale(1.1);
