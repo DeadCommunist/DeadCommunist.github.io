@@ -1,0 +1,142 @@
+a, a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+nav{
+    width: 100%;
+    font-family: 'Franklin Gothic';
+    background: #344051;
+    height: 60px;
+    z-index: 10;
+    position: fixed;
+}   
+.logo{
+    color: #fff;
+    font-size: 23.33px;
+    line-height: 60px;
+    transition: 0.3s;
+    transform: scale(1);
+}
+.logo:hover{
+    color: #eb7800;
+}
+.logo:active{
+    transform: scale(0.9);
+}
+.menu li{
+    float: left;
+    color: #fff;
+    line-height: 30px;
+    font-size: 16.67px;
+    padding-right: 33px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    transform: scale(1);
+}
+.menu li:hover{
+    color: #eb7800;
+}
+.menu li:active{
+    transform: scale(0.9);
+}
+.boot-btn{
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 8px 10px;
+    transition: 0.2s;
+}
+.boot-btn:hover{
+    color: #fff;
+    background-color: #3d5976; 
+    border: 3px solid rgba(255, 255, 255, 0.6);
+}
+main{
+    width: 100%;
+    height: 100%;
+    background: url(../img/boy.png) 984px 100% /auto 90% no-repeat, url(../img/background_main.png) center/cover no-repeat;
+}
+.title_container{
+    float: left;
+    color: #2c384a;
+    text-align: center;
+    font-family: 'Franklin Gothic';
+    width: 100%;
+    margin-top: 380px;
+}
+.title_container h1{
+    font-size: 76px;
+    font-weight: bold;
+    line-height: 81px;
+}
+.title_container h4{
+    color: #79818c;
+    font-size: 18.5px;
+    font-weight: bold;
+    margin-top: 27px;
+}
+.title_container input{
+    height: 42px;
+    text-align: center;
+    color: #6d7682;
+    font-size: 17px;
+    border: 2px solid;
+    border-radius: 5px;
+    background: none;
+    padding: 0px 18px;
+    margin: 46px 18px 305px 0px;
+    font-weight: bold;
+}    
+@media (max-width: 991px){
+    .title_container, .title_container h4, .title_container input{
+        color: #fff;
+        position: relative;
+        z-index: 3;
+    }
+    .main{
+        position: relative;
+    }
+    .main::after{
+        content: "";
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background: rgba (0,0,0,0.4);
+    }
+}
+.chapter_1 h2{
+    font-family: 'Franklin Gothic';
+    text-align: center;
+    color: #263244;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 78px;
+    font-weight: bold;
+}
+.chapter_1::after{
+    content: "";
+    display: block;
+    border-bottom: 4px solid #d17700;
+    width: 70px;
+    margin: 23px auto 59px auto;
+}
+.about_me{
+    font-family: 'calibri';
+    color: #38475a;
+}
+.about_me a{
+    color: #6f707e;
+    border: 2px #6f707e solid;
+    border-radius: 6px;
+    background: none;
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 7px 31px 9px 31px;
+}
