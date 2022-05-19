@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="src/css/bootstrap.min.css">
     <link rel="stylesheet" href="src/css/b_style.css">
     <link rel="stylesheet" href="src/css/stylesheet.css">
+    <link rel="stylesheet" href="src/css/bahnschrift.css">
+    <link rel="stylesheet" href="src/css/MyriadPro.css">
 </head>
 <body>
    <header>
@@ -45,11 +47,11 @@
        </nav>
     </header>
     <main>
-        <section class="main">
+        <section class="main h-100" id="main">
             <div class="container h-100">
                 <div class="row align-items-center h-100">
-                    <div class="col-lg-6">
-                        <div class="title_container">
+                    <div class="col-lg-6 mt-5 pt-5">
+                        <div class="title_container mt-5">
                             <h1>Привет<br>Я Андрей Браун</h1>
                             <h4>Фулл стек веб - разработчик и Android - разработчик</h4>
                             <input type="button" value="Обо мне">
@@ -61,7 +63,7 @@
         </section>
         <section class="about_me" id="about_me">
             <div class="container">
-                <div class="row d-flex flex-column justify-content-center align-items-center">
+                <div class="row d-flex flex-column justify-content-center align-items-center pb-3">
                     <div class="col-xl-2 col-lg-2">
                         <div class="chapter_1"><h2>Обо мне</h2></div>
                     </div>
@@ -74,8 +76,233 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapidus leo nec omare diam. Sed commodo nibh ante
                         facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec omare diam commodo nibh.</p>
                     </div>
-                    <div class="col-xl-2 col-lg-3 d-flex flex-column justify-content-center align-items-center">
+                    <div class="col-xl-2 col-lg-3 d-flex flex-column justify-content-center align-items-center mt-4 mb-5 pb-5">
                         <a href="#"><i class="fa fa-download download" aria-hidden="true"></i> Скачать резюме</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-xl-2 col-lg-3">
+                        <div class="chapter_2"><h2>Что я умею</h2></div>
+                    </div>
+                </div>
+                <div class="row skills-item">
+                    <div class="col-12 d-flex justify-content-around align-items-center">
+                        <div class="item_1">
+                            <img class="rounded mx-auto d-block img-fluid" src="src/img/laptop.png">
+                            <h4 class="pb-1">Веб-дизайн</h4>
+                            <span>Lorem ipsum dolor sit amet placerat<br>facilisis felis mi in tempus eleifend<br>pellentesque natoque etiam.</span>
+                        </div>
+                        <div class="item_2">
+                            <img class="rounded mx-auto d-block img-fluid" src="src/img/sign.png">
+                            <h4 class="pb-1">Разработка</h4>
+                            <span>Lorem ipsum dolor sit amet placerat<br>facilisis mi in tempus eleifend<br>pellentesque.</span>
+                        </div>
+                        <div class="item_3">
+                            <img class="rounded mx-auto d-block img-fluid" src="src/img/rocket.png">
+                            <h4 class="pb-1">CEO-Оптимизация</h4>
+                            <span>Lorem ipsum dolor sit amet placerat<br>facilisis felis mi in tempus eleifend<br>pellentesque natoque etiam.</span>
+                        </div>
+                        <div class="item_4">
+                            <img class="rounded mx-auto d-block img-fluid" src="src/img/Gram.png">
+                            <h4 class="pb-1">Маркетинг</h4>
+                            <span>Lorem ipsum dolor sit amet placerat<br>facilisis felis mi in tempus eleifend<br>pellentesque natoque.</span>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="case" id="case">
+           <div class="container">
+               <div class="row justify-content-center case_head">
+                   <div class="col-2">
+                       <div class="chapter_3"><h2>Кейсы</h2></div>
+                   </div>
+               </div>
+               <div class="row justify-content-center case_head">
+                   <div class="col-xl-8 col-lg-10 pb-4">
+                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</p>
+                   </div>
+               </div>
+               <div class="row case_img">
+                   <div class="col-12">
+                       <img class="rounded mx-auto d-block img-fluid" src="src/img/fotka1.png">
+                   </div>
+               </div>
+               <div class="row case_ex">
+                   <div class="col-3 d-flex flex-column case_ex_span_1">
+                       <h4>CLIENT:</h4>
+                       <span>Какая-то компания</span>
+                       <h4>WEBSITE:</h4>
+                       <span class="pt-2">https://www.somedomain.com</span>
+                       <input class="mt-4 case_input" type="button" value="Перейти на сайт">
+                   </div>
+                   <div class="col-9 d-flex flex-column case_ex_span_2">
+                       <h4>Название проекта</h4>
+                       <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna<br>aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+                   </div>
+               </div>
+               <div class="row justify-content-center" id="price">
+                   <div class="col-lg-10 col-md-8 d-flex flex-column align-items-center price mb-5">
+                       <div class="case_price">
+                           <h2 class="pt-5 pb-5">Расчёт стоимости</h2>
+                           <form>
+                               <h3 class="pb-3">Тип сайта</h3>
+                               <select class="mb-4">
+                                   <option selected disabled>Выберите пункт...</option>
+                                   <option>1</option>
+                                   <option>2</option>
+                                   <option>3</option>
+                               </select>
+                               <h3 class="pb-3">Дизайн</h3>
+                               <select class="mb-4">
+                                   <option selected disabled>Выберите пункт...</option>
+                                   <option>1</option>
+                                   <option>2</option>
+                                   <option>3</option>
+                               </select>
+                               <h3 class="pb-3">Адаптивность</h3>
+                               <select class="mb-4">
+                                   <option selected disabled>Выберите пункт...</option>
+                                   <option>1</option>
+                                   <option>2</option>
+                                   <option>3</option>
+                               </select>
+                           </form>
+                           <div class="price_final">
+                               <p class="p_final1">Сроки <span>0</span></p>
+                               <p class="p_final2">Стоимость <span>0</span></p>
+                           </div>
+                       </div>
+                       <div class="row">
+                           <div class="col-2 pt-4">
+                               <input class="price_input" type="submit" value="Оставить заявку">
+                           </div>
+                       </div>
+                   </div>
+               </div>
+            </div>
+        </section>
+        <section class="stat_bg">
+            <div class="container">
+              <div class="row justify-content-center">
+                   <div class="col-xl-4 col-lg-6">
+                       <div class="chapter_4"><h2>Немного статистики</h2></div>
+                   </div>
+              </div>
+              <div class="row stat">
+                 <div class="col-lg-1 col-md-0"></div>
+                  <div class="col-lg-10 col-md-12 d-flex justify-content-between align-items-center">
+                      <div class="item_stat">
+                          <img class="rounded mx-auto d-block img-fluid pb-4" src="src/img/smile.png">
+                          <h4>120</h4>
+                          <p class="pt-4">Счастливых клиентов</p>
+                      </div>
+                      <div class="item_stat">
+                          <img class="rounded mx-auto d-block img-fluid pb-4" src="src/img/sign1.png">
+                          <h4>4,600</h4>
+                          <p class="pt-4">Часов работы</p>
+                      </div>
+                      <div class="item_stat">
+                          <img class="rounded mx-auto d-block img-fluid pb-4" src="src/img/gal.png">
+                          <h4>340</h4>
+                          <p class="pt-4">Проектов завершено</p>
+                      </div>
+                      <div class="item_stat">
+                          <img class="rounded mx-auto d-block img-fluid pb-4" src="src/img/cap.png">
+                          <h4>23</h4>
+                          <p class="pt-4">Наград получено</p>
+                      </div>
+                  </div>
+                  <div class="col-lg-1 col-md-0"></div>
+              </div>
+            </div>
+        </section>
+        <section class="feedback mb-5 pb-4">
+            <div class="container" id="feedback">
+                <div class="row justify-content-center">
+                    <div class="col-lg-2 col-md-4">
+                        <div class="chapter_5"><h2>Отзывы</h2></div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-2">
+                             <img class="rounded mx-auto d-block img-fluid pt-5 mt-3" src="src/img/FeedbackFace.png">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-8 col-lg-10 col-md-12">
+                            <p class="pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center pb-5 mb-5">
+                        <div class="col-lg-4 col-md-6">
+                            <p><strong>Михаил</strong>, Ген. директор ПАО "Газпром".</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-5">
+                        <div class="chapter_6"><h2>Мои контакты</h2></div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xxl-7 col-xl-8">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcoccodo</p>
+                    </div>
+                </div>
+                <div class="row justify-content-around item_contacts_container">
+                    <div class="col-lg-6 col-lg-8 d-flex justify-content-around align-items-center">
+                        <div class="item_contacts">
+                            <img class="rounded mx-auto d-block img-fluid pb-3" src="src/img/Geo.png">
+                            <h4>Санкт-Петербург
+                            <br>Невский проспект 11</h4>
+                        </div>
+                        <div class="item_contacts">
+                            <img class="rounded mx-auto d-block img-fluid pb-3" src="src/img/envelope.png">
+                            <h4>info@companename.com</h4>
+                        </div>
+                        <div class="item_contacts">
+                            <img class="rounded mx-auto d-block img-fluid pb-3" src="src/img/Phone.png">
+                            <h4>+7 999 999-99-99</h4>
+                        </div> 
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <h3>Оставьте мне сообщение</h3>
+                    </div>
+                </div>
+                <div class="row justify-content-center form">
+                    <div class="col-8 d-flex justify-content-center">
+                        <form>
+                            <input class="enter" type="text" placeholder="Имя"> <input class="enter1" type="text" placeholder="Email">
+                            <br>
+                            <textarea placeholder="Сообщение"></textarea>
+                        </form>
+                    </div>
+                </div>
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-2 col-md-4 d-flex justify-content-center">
+                        <input class="button mt-3" type="submit" value="Отправить">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            
+        </section>
+        <section class="end">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <p>Copyright © 2021 Андрей Браун. Design by Web</p>
                     </div>
                 </div>
             </div>

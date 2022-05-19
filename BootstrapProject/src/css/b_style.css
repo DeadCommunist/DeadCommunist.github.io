@@ -6,6 +6,9 @@ a:hover{
     text-decoration: none;
     color: inherit;
 }
+h4{
+    margin: 0;
+}
 nav{
     width: 100%;
     font-family: 'Franklin Gothic';
@@ -20,12 +23,23 @@ nav{
     line-height: 60px;
     transition: 0.3s;
     transform: scale(1);
+    -webkit-animation: comming 2s;
+    -o-animation: comming 2s;
+    animation: comming 2s;
 }
 .logo:hover{
     color: #eb7800;
 }
 .logo:active{
     transform: scale(0.9);
+}
+@keyframes comming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 .menu li{
     float: left;
@@ -34,8 +48,40 @@ nav{
     font-size: 16.67px;
     padding-right: 33px;
     text-transform: uppercase;
-    transition: 0.3s;
+    transition: all 0.4s;
     transform: scale(1);
+    -webkit-animation: menu 2s forwards;
+    -o-animation: menu 2s forwards;
+    animation: menu 2s forwards;
+    opacity: 0;
+}
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+    animation-delay: 2s;
+}
+.menu li a:visited{
+    color: #fff;
+}
+@keyframes menu{
+    from{
+        opacity: 0;
+        margin-top: -80px
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
 }
 .menu li:hover{
     color: #eb7800;
@@ -55,10 +101,13 @@ nav{
     background-color: #3d5976; 
     border: 3px solid rgba(255, 255, 255, 0.6);
 }
+.boot-btn:visited{
+    color: #fff;
+}
 main{
     width: 100%;
     height: 100%;
-    background: url(../img/boy.png) 984px 100% /auto 90% no-repeat, url(../img/background_main.png) center/cover no-repeat;
+    background: url(../img/boy.png) 90% 100% /auto 90% no-repeat, url(../img/background_main.png) center/cover no-repeat;
 }
 .title_container{
     float: left;
@@ -66,7 +115,13 @@ main{
     text-align: center;
     font-family: 'Franklin Gothic';
     width: 100%;
-    margin-top: 380px;
+    opacity: 0;
+    -webkit-animation: title 2s forwards;
+    -o-animation: title 2s forwards;
+    animation: title 2s forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
 }
 .title_container h1{
     font-size: 76px;
@@ -77,7 +132,7 @@ main{
     color: #79818c;
     font-size: 18.5px;
     font-weight: bold;
-    margin-top: 27px;
+    margin-top: 25px;
 }
 .title_container input{
     height: 42px;
@@ -88,9 +143,29 @@ main{
     border-radius: 5px;
     background: none;
     padding: 0px 18px;
-    margin: 46px 18px 305px 0px;
     font-weight: bold;
-}    
+    margin: 54px 18px 0px 0px;
+    transform: scale(1);
+    transition: all 0.4s;
+}
+.title_container input:hover{
+    background-color: #223549;
+    color: #fff;
+    border: 2px solid #6c8aa9;
+}
+.title_container input:active{
+    transform: scale(0.9);
+}
+@keyframes title{
+    from{
+        opacity: 0;
+        margin-left: -403px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
 @media (max-width: 991px){
     .title_container, .title_container h4, .title_container input{
         color: #fff;
@@ -107,7 +182,7 @@ main{
         left: 0;
         right: 0;
         position: absolute;
-        background: rgba (0,0,0,0.4);
+        background: rgba(0,0,0,0.4);
     }
 }
 .chapter_1 h2{
@@ -131,12 +206,397 @@ main{
     color: #38475a;
 }
 .about_me a{
+    font-family: 'Franklin Gothic';
     color: #6f707e;
     border: 2px #6f707e solid;
     border-radius: 6px;
     background: none;
     text-align: center;
-    font-size: 11px;
+    font-size: 15px;
     font-weight: bold;
-    padding: 7px 31px 9px 31px;
+    padding: 6px 11px 6px 10px;
+    transform: scale(1);
+    transition: all 0.4s;
+}
+.about_me a:hover{
+    background-color: #223549;
+    color: #fff;
+    border: 2px solid #6c8aa9;
+}
+.about_me a:active{
+    transform: scale(0.9);
+}
+.skills{
+    width: 100%;
+    height: 522px;
+    background: url(../img/skills_background.jpg) center/cover no-repeat;
+}
+.chapter_2 h2{
+    width: 100%;
+    font-family: 'Franklin Gothic';
+    text-align: center;
+    color: #263244;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 98px;
+    font-weight: bold;
+}
+.chapter_2::after{
+    content: "";
+    display: block;
+    border-bottom: 4px solid #d17700;
+    width: 70px;
+    margin-top: 23px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.skills h4{
+    font-size: 17px;
+    color: #e87700;
+    font-family: 'Bahnschrift';
+}
+.skills span{
+    font-size: 14.5px;
+    font-family: 'calibri';
+    color: #38475a;
+    width: 210px;
+}
+.skills img{
+    padding-bottom: 32px;
+}
+.skills-item{ 
+    text-align: center;
+    height: 359px;
+}
+@media (max-width: 991px){
+    .skills-item br{
+        display: none;
+    }
+}
+.chapter_3 h2{
+    font-family: 'Franklin Gothic';
+    text-align: center;
+    color: #263244;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 104px;
+    font-weight: bold;
+}
+.chapter_3::after{
+    content: "";
+    display: block;
+    border-bottom: 4px solid #d17700;
+    width: 70px;
+    margin: 25px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.case_head{
+    font-family: 'calibri';
+    color: #3f495a;
+    font-size: 15px;
+    text-align: center;
+}
+.case input{
+    font-family: 'Myriad Pro';
+    font-size: 18px;
+    height: 44px;
+    width: 201px;
+    border-radius: 5px;
+    background-color: #63b5ae;
+    color: #fff;
+    transition: all 0.3s;
+    transform: scale(1);
+    z-index: 0;
+}
+.case input:hover{
+    background-color: #295753;
+}
+.case input:active{
+    transform: scale(0.9);
+}
+.case_ex{
+    margin-left: 70px;
+    color: #38475a;
+}
+.case_ex h4{
+    font-family: 'Franklin Gothic';
+    font-size: 25px;
+}
+.case_ex_span_1{
+    font-family: 'calibri';
+    font-size: 14px;
+}
+.case_ex_span_2{
+    font-family: 'calibri';
+    font-size: 17px;
+}
+@media (max-width: 1400px){
+        .case_ex{
+        margin: 0;
+    }
+    .case_ex_span_2 br{
+        display: none;
+    }
+}
+@media (max-width: 991px){
+    .case_input{
+        height: 35px;
+        width: 180px;
+    }
+    .case_ex h4{
+        font-size: 22px;
+    }
+    .case_ex_span_1 span{
+        font-size: 13px;
+    }
+    .case_ex_span_2 span{
+        font-size: 12px;
+    }
+}
+.price{
+    margin-top: 163px;
+    border: 2px solid #fff;
+    height: 756px;
+    width: 976px;
+    box-shadow: 3px 3px 20px 4px #cdcccc;
+}
+.case_price h2{
+    font-family: 'Franklin Gothic';
+    color: #102032;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+.case_price h3{
+    font-family: 'Franklin Gothic';
+    color: #102032;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.case_price select{
+    font-family: 'Franklin Gothic';
+    font-size: 18px;
+    height: 57px;
+    width: 890px;
+    background-color: #eee;
+    color: #737373;
+    padding: 0px 31px 0px 23px;
+}
+.p_final1{
+    font-family: 'Franklin Gothic';
+    margin: 0;
+    border-top: 2px solid #d1d1d1;
+    width: 891px;
+    padding-top: 23px;
+    color: #102032;
+    font-size: 21px;
+    font-weight: bold;
+    word-spacing: 812px;
+}
+.p_final2{
+    font-family: 'Franklin Gothic';
+    margin: 0;
+    color: #102032;
+    font-size: 21px;
+    font-weight: bold;
+    word-spacing: 772px;
+}
+.price_final span{
+    font-size: 25px;
+}
+.price_input{
+    font-family: 'Myriad Pro';
+    font-size: 18px;
+    height: 44px;
+    width: 201px;
+    border-radius: 5px;
+    background-color: #63b5ae;
+    color: #fff;
+    transition: all 0.3s;
+    transform: scale(1);
+    z-index: 0;
+}
+.stat_bg{
+    width: 100%;
+    height: 499px;
+    background: url(../img/stat_background.jpg) center/cover no-repeat;
+    background-attachment: fied;
+}
+.chapter_4 h2{
+    text-align: center;
+    color: #263244;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 98px;
+    font-weight: bold;
+}
+.chapter_4::after{
+    content: "";
+    display: block;
+    border-bottom: 4px solid #d17700;
+    width: 70px;
+    padding-top: 19px;
+    margin: 0 auto;
+}
+.stat{
+    height: 310px;
+}
+.stat h4{
+    color: #293b4f;
+    font-size: 33px;
+    text-align: center;
+    font-weight: bold;
+}
+.stat p{
+    color: #293b4f;
+    font-family: 'Franklin Gothic';
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.chapter_5 h2{
+    font-family: 'Franklin Gothic';
+    text-align: center;
+    color: #263244;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 95px;
+    font-weight: bold;
+}
+.chapter_5::after{
+    content: "";
+    display: block;
+    border-bottom: 4px solid #d17700;
+    width: 70px;
+    padding-top: 22px;
+    margin: 0 auto;
+}
+.feedback img{
+    padding-bottom: 29px;
+}
+.feedback p{
+    margin: 0;
+    font-family: 'calibri';
+    text-align: center;
+    color: #172c41;
+    font-size: 16px;
+}
+.contacts{
+    background: url(../img/contacts_background.png) center/cover no-repeat;
+    height: 808px;
+    width: 100%;
+}
+.chapter_6 h2{
+    font-family: 'Franklin Gothic';
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 105px;
+    font-weight: bold;
+}
+.chapter_6::after{
+    content: "";
+    display: block;
+    border-bottom: 4px solid #d17700;
+    width: 70px;
+    padding-top: 21px;
+    margin: 0 auto;
+}
+.contacts p{
+    font-family: 'calibri';
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 28px;
+    width: 100%;
+}
+.item_contacts_container{
+    height: 154px;
+}
+.contacts h4{
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+.contacts h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic';
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 45px;
+}
+.contacts form{
+    font-family: 'Franklin Gothic';
+    width: 733px;
+}
+.enter{
+    display: block;
+    float: left;
+    width: 352px;
+    height: 34px;
+    padding-left: 14px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+.enter1{
+    display: block;
+    float: left;
+    width: 352px;
+    height: 34px;
+    padding-left: 14px;
+    font-weight: bold;
+    margin-left: 13px;
+}
+.contacts textarea{
+    width: 730px;
+    height: 94px;
+    padding: 10px 12px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.button{
+    font-family: 'Franklin Gothic';
+    height: 46px;
+    width: 125px;
+    padding-left: 0px 17px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    transition: all 0.4s;
+    transform: scale(1);
+}
+.button:hover{
+    background-color: #fff;
+    color: #354051;
+}
+.button:active{
+    transform: scale(0.9);
+}
+@media (max-width: 1200px){
+    .enter{
+        margin-right: 13px;
+    }
+    .enter1{
+        margin-left: 13px;
+    }
+}
+.map{
+    height: 350px;
+    width: 100%;
+}
+.end{
+    font-family: 'Arial';
+    padding: 41px 0px;
+    height: 96px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    background-color: #354051;
 }
