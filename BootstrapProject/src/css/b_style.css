@@ -398,6 +398,19 @@ main{
     font-weight: bold;
     padding-left: 43px;
 }
+@media (max-width: 575px){
+    .case_price h3{
+        padding: 0px;
+    }
+}
+@media (max-width: 405px){
+    .case_price h2{
+        font-size: 25px;
+    }
+    .case_price h3{
+        font-size: 20px;
+    }
+}
 .select{
     width: 100%;
 }
