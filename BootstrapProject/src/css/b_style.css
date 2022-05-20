@@ -407,24 +407,16 @@ main{
     padding: 0px 31px 0px 23px;
     width: 100%;
 }
-.p_final1{
-    font-family: 'Franklin Gothic';
-    margin: 0;
+.price_border{
     border-top: 2px solid #d1d1d1;
-    width: 100%;
-    padding-top: 23px;
-    color: #102032;
-    font-size: 21px;
-    font-weight: bold;
-    word-spacing: 870px;
 }
-.p_final2{
+.price_final{
     font-family: 'Franklin Gothic';
     margin: 0;
+    width: 100%;
     color: #102032;
     font-size: 21px;
     font-weight: bold;
-    word-spacing: 830px;
 }
 .price_final span{
     font-size: 25px;
@@ -441,33 +433,16 @@ main{
     transform: scale(1);
     z-index: 0;
 }
-@media (max-width: 1200px){
-    .p_final1{
-        word-spacing: 855px;
-    }
-    .p_final2{
-        word-spacing: 815px;
-    }
-}
-@media (max-width: 991px){
-    .p_final1{
-        word-spacing: 611px;
-    }
-    .p_final2{
-        word-spacing: 570px;
-    }
-}
-@media (max-width: 768px){
-    .p_final1{
-        word-spacing: 430px;
-    }
-    .p_final2{
-        word-spacing: 390px;
-    }
+@media (max-width: 376px){
     .price_input{
-        width: 170px;
-        height: 35px;
-        font-size: 16px;
+        width: 150px;
+        height: 34px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 338px){
+    .price h2{
+        font-size: 30px;
     }
 }
 .stat_bg{
