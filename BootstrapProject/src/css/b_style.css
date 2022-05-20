@@ -93,7 +93,7 @@ nav{
     color: #fff;
     border: 2px solid #fff;
     border-radius: 5px;
-    padding: 8px 10px;
+    padding: 10px 25px;
     transition: 0.2s;
 }
 .boot-btn:hover{
@@ -228,9 +228,9 @@ main{
 }
 .skills{
     width: 100%;
-    height: 522px;
     background: url(../img/skills_background.jpg) center/cover no-repeat;
 }
+
 .chapter_2 h2{
     width: 100%;
     font-family: 'Franklin Gothic';
@@ -267,6 +267,7 @@ main{
 .skills-item{ 
     text-align: center;
     margin-top: 102px;
+    padding-bottom: 92px;
 }
 @media (max-width: 991px){
     .skills-item br{
@@ -380,6 +381,7 @@ main{
     height: 756px;
     width: 976px;
     box-shadow: 3px 3px 20px 4px #cdcccc;
+    padding: 0px 44px 0px 44px;
 }
 .case_price h2{
     font-family: 'Franklin Gothic';
@@ -394,6 +396,7 @@ main{
     font-size: 30px;
     text-transform: uppercase;
     font-weight: bold;
+    padding-left: 43px;
 }
 .select{
     width: 100%;
@@ -447,7 +450,6 @@ main{
 }
 .stat_bg{
     width: 100%;
-    height: 499px;
     background: url(../img/stat_background.jpg) center/cover no-repeat;
     background-attachment: fied;
 }
@@ -468,7 +470,10 @@ main{
     margin: 0 auto;
 }
 .stat{
-    height: 310px;
+    padding-bottom: 102px;
+}
+.stat img{
+    padding-top: 84px;
 }
 .stat h4{
     color: #293b4f;
@@ -481,6 +486,7 @@ main{
     font-family: 'Franklin Gothic';
     text-transform: uppercase;
     font-size: 15px;
+    text-align: center;
 }
 .chapter_5 h2{
     font-family: 'Franklin Gothic';
@@ -519,7 +525,6 @@ main{
 }
 .contacts{
     background: url(../img/contacts_background.png) center/cover no-repeat;
-    height: 808px;
     width: 100%;
 }
 .chapter_6 h2{
@@ -546,9 +551,11 @@ main{
     text-align: center;
     padding-top: 28px;
     width: 100%;
+    margin: 0px;
 }
-.item_contacts_container{
-    height: 154px;
+.item_contacts{
+    padding-top: 19px;
+    padding-bottom: 15px;
 }
 .contacts h4{
     color: #fff;
@@ -570,7 +577,7 @@ main{
 .enter{
     display: block;
     float: left;
-    width: 352px;
+    width: 48%;
     height: 34px;
     padding-left: 14px;
     font-weight: bold;
@@ -579,14 +586,14 @@ main{
 .enter1{
     display: block;
     float: left;
-    width: 352px;
+    width: 48%;
     height: 34px;
     padding-left: 14px;
     font-weight: bold;
     margin-left: 13px;
 }
 .contacts textarea{
-    width: 730px;
+    width: 100%;
     height: 94px;
     padding: 10px 12px;
     font-weight: bold;
@@ -606,6 +613,40 @@ main{
     color: #fff;
     transition: all 0.4s;
     transform: scale(1);
+    margin-bottom: 168px;
+}
+@media (max-width: 768px){
+    .enter{
+        width: 47%;
+    }
+    .enter1{
+        width: 47%;
+    }
+    .contacts textarea{
+        width: 99%;
+    }
+}
+@media (max-width: 453px){
+    .enter{
+        width: 46.5%;
+    }
+    .enter1{
+        width: 46.5%;
+    }
+    .contacts textarea{
+        width: 99%;
+    }
+}
+@media (max-width: 391px){
+    .enter{
+        width: 45%;
+    }
+    .enter1{
+        width: 45%;
+    }
+    .contacts textarea{
+        width: 97%;
+    }
 }
 .button:hover{
     background-color: #fff;
