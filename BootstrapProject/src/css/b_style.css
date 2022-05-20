@@ -266,11 +266,14 @@ main{
 }
 .skills-item{ 
     text-align: center;
-    height: 359px;
+    margin-top: 102px;
 }
 @media (max-width: 991px){
     .skills-item br{
         display: none;
+    }
+    .skills_item{
+        justify-content: space-between;
     }
 }
 .chapter_3 h2{
@@ -332,7 +335,7 @@ main{
     font-size: 17px;
 }
 @media (max-width: 1400px){
-        .case_ex{
+    .case_ex{
         margin: 0;
     }
     .case_ex_span_2 br{
@@ -375,25 +378,28 @@ main{
     text-transform: uppercase;
     font-weight: bold;
 }
+.select{
+    width: 100%;
+}
 .case_price select{
     font-family: 'Franklin Gothic';
     font-size: 18px;
     height: 57px;
-    width: 890px;
     background-color: #eee;
     color: #737373;
     padding: 0px 31px 0px 23px;
+    width: 100%;
 }
 .p_final1{
     font-family: 'Franklin Gothic';
     margin: 0;
     border-top: 2px solid #d1d1d1;
-    width: 891px;
+    width: 100%;
     padding-top: 23px;
     color: #102032;
     font-size: 21px;
     font-weight: bold;
-    word-spacing: 812px;
+    word-spacing: 870px;
 }
 .p_final2{
     font-family: 'Franklin Gothic';
@@ -401,7 +407,7 @@ main{
     color: #102032;
     font-size: 21px;
     font-weight: bold;
-    word-spacing: 772px;
+    word-spacing: 830px;
 }
 .price_final span{
     font-size: 25px;
@@ -417,6 +423,22 @@ main{
     transition: all 0.3s;
     transform: scale(1);
     z-index: 0;
+}
+@media (max-width: 1200px){
+    .p_final1{
+        word-spacing: 855px;
+    }
+    .p_final2{
+        word-spacing: 815px;
+    }
+}
+@media (max-width: 991px){
+    .p_final1{
+        word-spacing: 611px;
+    }
+    .p_final2{
+        word-spacing: 570px;
+    }
 }
 .stat_bg{
     width: 100%;
