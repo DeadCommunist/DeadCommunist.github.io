@@ -70,9 +70,6 @@ nav{
 .menu li:nth-child(6){
     animation-delay: 2s;
 }
-.menu li a:visited{
-    color: #fff;
-}
 @keyframes menu{
     from{
         opacity: 0;
@@ -334,51 +331,36 @@ main{
 .case_ex_span_2{
     font-family: 'calibri';
     font-size: 17px;
+    width: 70%;
 }
-@media (max-width: 1400px){
+@media (max-width: 1399px){
     .case_ex{
         margin: 0;
+    }
+    .case_ex_span_2{
+        text-align: center;
+        width: 100%;
     }
     .case_ex_span_2 br{
         display: none;
     }
-}
-@media (max-width: 991px){
+    .case_ex_span_1{
+        text-align: center;
+        width: 100%;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
     .case_input{
-        height: 30px;
-        width: 140px;
-        font-size: 14px;
+        display: block;
+        width: 100%;
     }
-    .case_ex h4{
-        font-size: 22px;
-    }
-    .case_ex_span_1 span{
-        font-size: 13px;
-    }
-    .case_ex_span_2 span{
-        font-size: 12px;
-    }
-}
-@media (max-width: 768px){
-    .case_input{
-        height: 25px;
-        width: 120px;
-        font-size: 10px;
-    }
-    .case_ex h4{
-        font-size: 18px;
-    }
-    .case_ex_span_1 span{
-        font-size: 9px;
-    }
-    .case_ex_span_2 span{
-        font-size: 9.2px;
+    .case_button{
+        justify-content: center;
     }
 }
 .price{
     margin-top: 163px;
     border: 2px solid #fff;
-    height: 756px;
     width: 976px;
     box-shadow: 3px 3px 20px 4px #cdcccc;
     padding: 0px 44px 0px 44px;
@@ -438,23 +420,17 @@ main{
     font-size: 25px;
 }
 .price_input{
+    width: 100%;
     font-family: 'Myriad Pro';
     font-size: 18px;
     height: 44px;
-    width: 201px;
     border-radius: 5px;
     background-color: #63b5ae;
     color: #fff;
     transition: all 0.3s;
     transform: scale(1);
     z-index: 0;
-}
-@media (max-width: 376px){
-    .price_input{
-        width: 150px;
-        height: 34px;
-        font-size: 14px;
-    }
+    margin-bottom: 37px;
 }
 @media (max-width: 338px){
     .price h2{
