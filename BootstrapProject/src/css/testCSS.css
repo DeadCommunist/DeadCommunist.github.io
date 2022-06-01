@@ -1,0 +1,16 @@
+.section{
+    border: 2px solid red;
+    height: 500px;
+    text-align: center;
+    background-color: brown; 
+}
+.section select{
+    width: 90%;
+    height: 50px;
+    background-color: antiquewhite;
+}
+.res{
+    margin-left: 96px;
+    margin-top: 20px;
+    background-color: brown;
+}

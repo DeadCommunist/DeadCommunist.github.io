@@ -2,11 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Test</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/css/testCSS.css">
 </head>
 <body>
-    <script src="src/js/scripts.js">
-        
-    </script>
+    <nav>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#one">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#two">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#three">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="section">
+        <form>
+            <h2>Раздел 1</h2>
+            <select>
+                <option selected disabled>Выберите пункт...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <h2>Раздел 2</h2>
+            <select>
+                <option selected disabled>Выберите пункт...</option>
+                <option value="4">1</option>
+                <option value="5">2</option>
+                <option value="6">3</option>
+            </select>
+            <h2>Раздел 3</h2>
+            <select>
+                <option selected disabled>Выберите пункт...</option>
+                <option value="7">1</option>
+                <option value="8">2</option>
+                <option value="9">3</option>
+            </select>
+        <input class="d-block res" type="text" value="0" id="result">
+        </form>
+    </section>
+    <script src="src/js/jquery-3.6.0.min.js"></script>
+    <script src="src/js/bootstrap.bundle.min.js"></script>
+    <script src="src/js/scripts.js"></script>
 </body>
 </html>
