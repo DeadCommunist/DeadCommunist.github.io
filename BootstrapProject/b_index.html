@@ -175,14 +175,14 @@
                    </div>
                </div>
                     <div class="case_price section mb-5">
-                        <div class="row justify-content-center" id="price">
-                            <div class="col-10 price price_animation">
+                        <div class="row justify-content-center">
+                            <div class="col-10 price price_animation" id="sum">
                                 <div class="row justify-content-center mt-5 mb-5">
                                     <div class="col-lg-5 col-md-7">
                                         <h2>Расчёт стоимости</h2>
                                     </div>
                                 </div>
-                                <form>
+                                <form id="calculation">
                                 <div class="row">
                                     <div class="col-lg-3 col-md-6 col-sm-8">
                                         <h3 class="pb-3">Тип сайта</h3>
@@ -190,11 +190,11 @@
                                 </div>
                                   <div class="row">
                                       <div class="col-10 select">
-                                          <select class="mb-4" id="Type">
-                                              <option selected disabled>Выберите пункт...</option>
-                                              <option value="5000">Сайт-визитка</option>
-                                              <option value="10000">Интернет-магазин</option>
-                                              <option value="20000">Корпоративный</option>
+                                          <select class="mb-4" name="Type" id="Type">
+                                              <option value="?" valTime="?" selected>Выберите пункт...</option>
+                                              <option value="5000" data-days="2">Сайт-визитка</option>
+                                              <option value="10000" data-days="7">Интернет-магазин</option>
+                                              <option value="20000" data-days="5">Корпоративный</option>
                                           </select>
                                       </div>
                                   </div>
@@ -205,11 +205,11 @@
                                   </div>
                                   <div class="row">
                                       <div class="col-10 select">
-                                          <select class="mb-4" id="Design">
-                                              <option selected disabled>Выберите пункт...</option>
-                                              <option value="5000">Минимализм</option>
-                                              <option value="10000">Гранж</option>
-                                              <option value="15000">Дизайн на заказ</option>
+                                          <select class="mb-4" name="Design" id="Design">
+                                              <option value="?" data-daysTwo="?" selected>Выберите пункт...</option>
+                                              <option value="5000" data-daysTwo="1">Минимализм</option>
+                                              <option value="10000" data-daysTwo="2">Гранж</option>
+                                              <option value="15000" data-daysTwo="3">Дизайн на заказ</option>
                                           </select>
                                       </div>
                                   </div>
@@ -220,11 +220,11 @@
                                   </div>
                                   <div class="row">
                                       <div class="col-10 select">
-                                          <select class="mb-5" id="Adapt">
-                                              <option selected disabled>Выберите пункт...</option>
-                                              <option value="1000">Только для ПК</option>
-                                              <option value="5000">Только для мобильных устройств</option>
-                                              <option value="10000">Для ПК и мобильных устройств</option>
+                                          <select class="mb-5" name="Adapt" id="Adapt">
+                                              <option value="?" data-daysThree="?" selected>Выберите пункт...</option>
+                                              <option value="1000" data-daysThree="1">Только для ПК</option>
+                                              <option value="5000" data-daysThree="1">Только для мобильных устройств</option>
+                                              <option value="10000" data-daysThree="1">Для ПК и мобильных устройств</option>
                                           </select>
                                       </div>
                                   </div>
@@ -236,17 +236,13 @@
                                          <div class="col-1">
                                              <p>Сроки</p>
                                          </div>
-                                         <div class="col-1 d-flex justify-content-end">
-                                             <input type="text" value="0" id="deadline">
-                                         </div>
+                                         <div class="col-3 d-flex justify-content-end" name="Deadline" id="Deadline">0</div>
                                      </div>
                                      <div class="row price_final justify-content-between">
                                          <div class="col-2">
                                              <p>Стоимость</p>
                                          </div>
-                                         <div class="col-1 d-flex justify-content-end">
-                                             <input type="text" value="0" id="result">
-                                         </div>
+                                         <div class="col-9 d-flex justify-content-end" name="Result" id="Result">0</div>
                                      </div>
                                       <div class="row justify-content-center">
                                           <div class="col-lg-3 col-md-4 col-sm-5 col-8 pt-2 d-block">
@@ -306,11 +302,6 @@
                     
                     <div class="row">   
                         <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="false">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <img class="pt-5 mt-3 imgOne rounded mx-auto d-block" src="src/img/feedbackFaceBad.jpg" data-src="src/img/FeedbackFace.png" alt="...">
@@ -342,6 +333,11 @@
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Следующий</span>
                                 </button>
+                                <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
                             </div>
                         </div>                    
                     </div>
@@ -403,26 +399,6 @@
         </section>
         <section class="map">
             
-<button type="button" class="btn btn-primary mod" data-bs-toggle="modal" data-bs-target="#exampleModal" id="myModal">-</button>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title text-center" id="exampleModalLabel">Закажите обратный звонок прямо сейчас и получите <strong>скидку 30%</strong></h5>
-      </div>
-      <div class="modal-body mx-auto">
-          <form>
-              <input class="modalInputOne" type="text" placeholder="Ваше имя"><input class="modalInputTwo" type="text" placeholder="Телефон">
-              <textarea class="d-block modalArea" placeholder="Коментарий..."></textarea>
-          </form>
-      </div>
-      <div class="modal-footer justify-content-center">
-        <button type="button" class="btn btn-primary">Заказать звонок</button>
-      </div>
-    </div>
-  </div>
-</div>
-            
         </section>
         <section class="end">
             <div class="container">
@@ -433,6 +409,33 @@
                 </div>
             </div>
         </section>
+        <div></div>
+        <button type="button" class="btn btn-primary mod" data-bs-toggle="modal" data-bs-target="#exampleModal" id="myModal"></button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-center" id="exampleModalLabel">Закажите обратный звонок прямо сейчас и получите <strong>скидку 30%</strong></h5>
+              </div>
+              <div class="modal-body mx-auto">
+                  <form class="modWin">
+                     <div class="col-6 d-inline">
+                         <input class="modalInputOne modal_text" type="text" placeholder="Ваше имя">
+                     </div>
+                     <div class="col-6 d-inline">
+                         <input class="modalInputTwo modal_text" type="text" placeholder="Телефон">
+                     </div>
+                     <div class="col-12">
+                         <textarea class="d-block modalArea modal_text" placeholder="Коментарий..."></textarea>
+                     </div>
+                  </form>
+              </div>
+              <div class="modal-footer justify-content-center">
+                <button type="button" class="butn">Заказать звонок</button>
+              </div>
+            </div>
+          </div>
+        </div>
     </main>
     <script src="src/js/jquery-3.6.0.min.js"></script>
     <script src="src/js/bootstrap.bundle.min.js"></script>

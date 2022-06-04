@@ -699,23 +699,94 @@ main{
 }
 .mod{
     visibility: hidden;
+    display: none;
+}
+.modal-content{
+    background-color: #354051;
+    border-radius: 20px;
+}
+.modal-header{
+    color: #fff;
+    border-bottom: 1px solid #e46500;
+}
+.modal-footer{
+    border-top: 1px solid #e46500;
 }
 .modalInputOne{
-    border: 2px solid #676769;
-    width: 49%;
+    border: 2px solid #e46500;
     padding-left: 5px;
     margin-right: 5px;
+    width: 49%;
+    border-radius: 5px;
 }
 .modalInputTwo{
-    border: 2px solid #676769;
-    width: 48.5%;
+    border: 2px solid #e46500;
     padding-left: 5px;
     margin-left: 5px;
+    width: 47%;
+    border-radius: 5px;
 }
 .modalArea{
-    border: 2px solid #676769;
+    border: 2px solid #e46500;
     margin-top: 5px;
     padding-left: 5px;
-    padding-right: 300px;
     width: 100%;
+    border-radius: 5px;
+}
+.modWin{
+    width: 100%;
+}
+.modal_text{
+    margin-bottom: 7px;
+}
+.modal_text:hover{
+    background-color: #b3b6ba;
+}
+.carousel-indicators{
+    position: static;
+    margin-top: 48px;
+    margin-bottom: 91px;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: #cfd3d8;
+}
+.carousel-indicators [data-bs-target] {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+.carousel-dark .carousel-indicators .active{
+    background-color: #e46500;
+}
+.butn{
+    background-color: #e46500;
+    border: 2px solid #cfd3d8;
+    color: #354051;
+    border-radius: 15px;
+    transform: scale(1);
+    padding: 7px 10px 7px 10px;
+    transition: 0.3s;
+}
+.butn:hover{
+    background-color: #a14b06;
+    border: 2px solid #cfd3d8;
+}
+.butn:active{
+    transform: scale(0.9);
+}
+@media (max-width: 389px){
+    .modalInputOne{
+        width: 48%;
+    }
+    .modalInputTwo{
+        width: 47%;
+    }
+}
+@media (max-width: 320px){
+    .modalInputOne{
+        width: 47%;
+    }
+    .modalInputTwo{
+        width: 47%;
+    }
 }

@@ -1,5 +1,41 @@
 $(document).ready(function(){  
     
+    
+
+var sum;
+var deadline;
+var day;
+function convert(){
+	sum = Number($("#Type option:selected").attr("value")) + 
+		Number($("#Design option:selected").attr("value")) + 
+		Number($("#Adapt option:selected").attr("value"));
+
+	if (isNaN(sum)) {sum = "0"};
+}
+function time(){
+	deadline = Number($("#Type option:selected").attr("data-days")) * 
+		(Number($("#Design option:selected").attr("data-daysTwo")) + 
+		Number($("#Adapt option:selected").attr("data-daysThree")));
+}
+$("#Type").change(function(){
+	convert();
+	$("#Result").text(sum);
+	time();
+	$("#Deadline").text(deadline);
+});
+$("#Design").change(function(){
+	convert();
+	$("#Result").text(sum);
+	time();
+	$("#Deadline").text(deadline);
+});
+$("#Adapt").change(function(){
+	convert();
+	$("#Result").text(sum);
+	time();
+	$("#Deadline").text(deadline);
+});
+   
 $(window).scroll(function(){
     let scrollDistance = $(window).scrollTop();
     $(".section").each(function(i, el){
@@ -12,11 +48,30 @@ $(window).scroll(function(){
            $('nav li:eq('+ i +')').find('a').addClass('visited');
        }
     });
-});
+}); 
 
+  
+$('select').change(sum);
+
+function sum(){
+    let result=0;
+    $('#sum').find('select').each(function(){
+        let value = 0;
+        if (typeof $(this).val() == 'object'){
+          $.each($(this).val(), function(index, val) {
+            value += val*1;
+          });
+        } else {
+          value = $(this).val()
+        }
+        result+=value*1;
+    });
+    $('#result').val(result);
+} 
+   
 $('.price').on('change', 'select', ({ delegateTarget: formEl }) => {
   $('#result').val($('select', formEl).get().reduce((acc, n) => acc + (+n.value || 0), 0));
-});         
+});        
     
 $(function(){
 	var target_block = $(".number");  
@@ -89,8 +144,8 @@ $('a[href^="#"]').click(function(){
     $('html, body').animate({scrollTop: $(valHref).offset().top - 60 + "px"});
 }); 
     
-setTimeout(function(){ 
+ setTimeout(function(){ 
     $("#myModal").click();
-}, 3000);
+}, 3000); 
     
 });

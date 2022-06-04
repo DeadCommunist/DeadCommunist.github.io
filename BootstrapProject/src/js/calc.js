@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Test</title>
-    <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/bootstrap.min.css">
-    <link rel="stylesheet" href="src/css/testCSS.css">
-</head>
-<body>
-  <section>
    <div class="cost_calculation py-5 mb-5" id="calculation">
-            <div class="container py-5 col-10 d-flex flex-column section">  
+            <div class="container py-5 col-10 d-flex flex-column ">  
                 <h2>РАСЧЕТ СТОИМОСТИ</h2>            
 
                 <h3>ТИП САЙТА</h3>
@@ -54,10 +43,3 @@
                 <!--<input type="button" value="Оставить заявку">-->
             </div> 
         </div>
-    </section>
-    <script src="src/js/jquery-3.6.0.min.js"></script>
-    <script src="src/js/bootstrap.bundle.min.js"></script>
-    <script src="src/js/calc.js"></script>
-    <script src="src/js/scripts.js"></script>
-</body>
-</html>
